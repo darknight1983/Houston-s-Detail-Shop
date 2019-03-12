@@ -1,7 +1,7 @@
 import React from "react";
 import {
   AppBar,
-  ToolBar,
+  Toolbar,
   Typography,
   Grid,
   withStyles
@@ -9,14 +9,17 @@ import {
 import PropTypes from "prop-types";
 
 const styles = theme => ({
-  root: {}
+  root: {},
+  header: {}
 });
 
 const Header = props => {
   const { classes } = props;
   return (
-    <div>
-      <h1>This will be the header.</h1>
+    <div className={classes.root}>
+      <AppBar position="fixed" color="primary" className={classes.header}>
+        <Toolbar>Maine's Detail</Toolbar>
+      </AppBar>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import withLayout from "../lib/withLayout";
+import IndexContent from "../components/IndexContent";
 import Head from "next/head";
 
 const Index = props => {
@@ -11,7 +12,7 @@ const Index = props => {
           content="This is the description of the Index page"
         />
       </Head>
-      <h1>This is the Index Page</h1>
+      <IndexContent />
     </div>
   );
 };
